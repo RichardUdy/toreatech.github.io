@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- title, style, meta, link, script, base -->
+<title>Logbook Support</title>
+<meta name="keywords content="Everyday, Logbook">
+<meta name="description" content="Everyday Logbook Support">
+<meta name="author" content="Richard Udy">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  p.padding { padding-left: 20px; }
+</style>
+</head>
+<body>
+
+<h1>Logbook Support</h1>
+
+<h2>Quick Start Guide</h2>
+
+<details>
+  <summary>Create a new Logbook</summary>
+  <p class="padding";>Tap the "+" button, and enter a name for the Logbook.</p>
+</details>
+
+<details>
+  <summary> Add fields to the Logbook</summary>
+  <p><ol>
+    <li>Tap the "i" button, then tap the "+" button to show the Field form.</li>
+    <li>Choose the type of field.</li>
+    <li>Enter the details required for the field, and tap "Save" (this button is enabled once all required details are supplied).</li>
+  </ol></p>
+</details>
+
+<details>
+  <summary> Rearrange the Logbook fields (optional) </summary>
+  <p><ol>
+    <li> In the Fields list, tap the "Edit" button, then use the handles to the right of each field to drag them into the order you want them. </li>
+    <li>When done, tap the "Tick" button.</li>
+  </ol></p>
+</details>
+
+<details>
+  <summary> Add log entries </summary>
+  <p>
+  <ol>
+    <li> Tap the Logbook to open it, then tap the "+" button to show the log entry form. </li>
+    <li> Enter/select values for the fields you want to record, and tap "Save". </li>
+    <li> The Logbook shows its entries, with the latest at the top. </li>
+  </ol>
+    <p  class="padding";> <b>Tip:</b><br> To quickly add a new entry without opening the Logbook, simply long-press the Logbook until it turns yellow, then enter the details and save it. </p>
+  </p>
+</details>
+
+<details>
+  <summary> Review a Logbook's entries </summary>
+  <p><ol>
+    <li> Tap the Logbook to open it. </li>
+    <li> The entries are listed, with the latest at the top, each showing a summary of the recorded details. </li>
+    <li> Tap an entry to view it in detail. From here you can: 
+      <ul>
+        <li> Swipe back and forwards through the entries. </li>
+        <li> Amend recorded values by tapping on them and saving the changes. </li>
+      </ul></li>
+  </ol></p>
+</details>
+
+<br>
+
+<h2> Field Types Guide </h2>
+
+<details>
+  <summary> Text </summary>
+  <p class="padding";> Used for text up to 40 characters. For longer text, use the Notes section at the bottom of the record, which can wrap longer text over multiple lines. </p>
+</details>
+
+<details>
+  <summary> Numeric </summary>
+  <p class="padding";> Used for recording numeric values. 
+<br> You also need to specify the unit, i.e. what the number refers to. The unit would generally be a symbol or abbreviation (e.g. %, kg, $). When displaying the value, currency symbols are generally shown immediately before, and others immediately after the value. If you want a space between the number and the unit, add a space when specifying the unit (e.g. " kg"). 
+<br> When entering the value you can specify as many decimal places as you want. The Decimal Places setting for the field is used only when displaying the value, and does not affect your stored value. You can change the Decimal Places setting at any time to show more or less of the recorded value. 
+  </p>
+</details>
+
+<details>
+  <summary> Picker List </summary>
+  <p class="padding";> Used to pick the field value from a pre-defined list. 
+<br> You can create a new Picker List as part of specifying the field, or you can re-use a list that has already been defined.
+<br> Pre-fill Logic allows you to set the default selection when adding a new entry: either the first item in the list, or the same item that was used in the previous entry.
+  </p>
+</details>
+
+<details>
+  <summary> Numeric Picker (Number Wheel) </summary>
+  <p class="padding"> Used to record a numeric value by selecting it from a number wheel, rather than entering the digits. It requires the Unit to be specified (as with Numeric fields), and also has Pre-fill Logic (as with Picker List fields). This field type can be useful where the value in successive entries may be the same or close to that of the previous entry.
+<br> This field specifies a range of numbers (e.g. -10 through to 20), and a Step Size which is the difference between successive numbers. Normally the numbers are listed with the lowest at the bottom, and the highest at the top. To reverse this order, use a negative Step Size (e.g. -2).
+<br> Unlike a Picker List field, the default selection is 0, or as close to 0 as the list allows. You can override this by setting Pre-fill Logic to "Previous".
+<br> You can change the range and Step Size at any time without affecting existing entries - their value will be temporarily added to the number wheel if necessary.
+  </p>
+</details>
+
+<details>
+  <summary> Time </summary>
+  <p class="padding"> Used to record a period of time. This field type comes in two forms, which you choose when creating the field, and which cannot be changed later:
+    <ul>
+    <li> Event Duration - starts a timer, and provides a button to finish the timer. Tapping the button shows the period of time since the entry was created. This time value can be edited in the same way as other field types. </li>
+    <li> Elapsed Time - shows the time since the previous entry. As the period shown depends on the timestamps of the two entries, amending one of the timestamps will affect the value. </li>
+    </ul>
+  </p>
+</details>
+
+<br>
+
+<h2>FAQ</h2>
+
+<details>
+  <summary>How do I get rid of a Logbook?</summary>
+  <p>Slide the Logbook to the left, and tap "Hide". You can view hidden Logbooks by tapping "Recover Logbooks" button at the bottom of the list. From there you can either restore (i.e. Unhide) a Logbook, or permanently delete it.</p>
+</details>
+
+<details>
+  <summary> Can I change the name of a Logbook? </summary>
+  <p>No, once you have named a Logbook, it cannot be changed.</p>
+</details>
+
+<details>
+  <summary>Can I rearrange the list of Logbooks?</summary>
+  <p>Yes. Tap "Edit", then use the grab handles on the right edge to drag items where you want them. Tap the Tick button when done.</p>
+</details>
+
+<details>
+  <summary> Can I remove fields that I don't need?</summary>
+  <p>Yes. Slide the field to the left, and tap "Hide". Use the Hidden Fields button to view any hidden fields - from there you can either restore them, or permanently delete them.</p>
+</details>
+
+<details>
+  <summary> Can I change how a field is specified?</summary>
+  <p>You cannot change the internal name, or the field type. But all the other attributes can be changed. On the fields list, tap on the field to make it editable, then tap "Save" when done.</p>
+</details>
+
+<details>
+  <summary> Why is the "Save" button grey-ed out?</summary>
+  <p>The "Save" button is generally disabled until all <em>required</em> values have been entered.</p>
+</details>
+
+<details>
+  <summary> How do I define a Picker List?</summary>
+  <p>A Picker List is generally defined when specifying the first field that uses it. When you specify a Picker List field, you choose from a list of available Picker Lists, which includes a "New List" item. Choosing "New List" adds a field for you to name the new Picker List. Once you have saved the field settings, tap the new Picker List name. This opens a view where you can specify the items in the list, and arrange them in an appropriate order.</p>
+</details>
+
+<details>
+  <summary> How can I manage existing Picker Lists?</summary>
+  <p>Tap the Admin Menu button (at the top left of the list of logbooks), then tap "Picker Lists". This shows the Picker Lists that are currently being used, with the Logbooks using them, and below that a list of unused Lists. Unused lists can be deleted (by sliding left).</p>
+</details>
+
+<details>
+  <summary> Can I get rid of unwanted Logbook entries?</summary>
+  <p>Yes, by sliding the entry to the left.</p>
+</details>
+
+<details>
+  <summary> Can I change an entry's timestamp?</summary>
+  <p>Yes. Tap the entry in the list to open it in its detail view. Then tap the timestamp to show it as a date and time picker. Tap "Save" to update the entry. You may need to go back and re-open the Logbook to ensure the entries are still in timestamp order.</p>
+</details>
+
+<details>
+  <summary> Can I export a Logbook's data?</summary>
+  <p>A Logbook's data can be exported as a .CSV file (comma-separated-variables), which can be opened by most spreadsheet applications. Open the Logbook, then tap the "Folders" button at the top. Tap "Export", then choose "Save to Files" from the various options offered, and choose where to save the file. Exporting the data does not affect the Logbook's entries in any way.</p>
+</details>
+
+<details>
+  <summary> Where is the Logbook data held?</summary>
+  <p>The data is stored only on your device where you use the app, and in your iCloud backup if you have that enabled. There is no remote storage.</p>
+</details>
+
+<details>
+  <summary> Can I set the app back to its Factory Settings?</summary>
+  <p>The Admin Menu (top left above the list of Logbooks) provides the "Factory Reset" option. <br><b>Use this with CAUTION.</b><br> If you choose this option, and confirm to Reset the Settings, all the settings and changes you have made in the app will be wiped, and the app returned to the state it was in when first installed. <br><b>This action cannot be undone!</b></p>
+</details>
+
+<!--
+<details>
+  <summary>Question?</summary>
+  <p>Answer.</p>
+</details>
+
+<details>
+  <summary>Question?</summary>
+  <p>Answer.</p>
+</details>
+
+<details>
+  <summary>Question?</summary>
+  <p>Answer.</p>
+</details>
+-->
+
+<br>
+
+<h2>Feedback</h2>
+
+If you have any further questions, suggestions or comments, 
+<br> please email me at <a href="mailto:rmudy@icloud.com">rmudy@icloud.com</a>
+<br>
+<br>
+</body>
+</html>
