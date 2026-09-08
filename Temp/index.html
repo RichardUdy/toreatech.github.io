@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logbook Support Redirecting...</title>
+    <script>
+        // 1. Get the version parameter from the URL (e.g., ?v=1.3)
+        const urlParams = new URLSearchParams(window.location.search);
+        const appVersion = urlParams.get('v');
+
+        // 2. Determine the destination folder based on the version
+        let targetFolder = 'v1.2'; // Default fallback for older versions or web visitors
+
+        if (appVersion) {
+            if (appVersion.startsWith('1.3')) {
+                targetFolder = 'v1.3';
+            } 
+            // Future-proofing: Add else-if blocks here for v1.4, v2.0, etc.
+        }
+
+        // 3. Perform the redirect
+        window.location.href = "./" + targetFolder + "/index.html";
+    </script>
+</head>
+<body>
+    <p>Redirecting to the appropriate support documentation...</p>
+</body>
+</html>
